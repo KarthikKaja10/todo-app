@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
-const API = "https://todo-app-s3am.onrender.com/tasks";
+const API = "https://todo-app-backend-n01i.onrender.com/tasks";
 
 function App() {
   const [tasks, setTasks] = useState([]);
