@@ -13,9 +13,14 @@ function App() {
 
   // Fetch tasks
   useEffect(() => {
-    fetch(API)
-      .then(res => res.json())
-      .then(data => setTasks(data));
+  fetch(API)
+    .then(res => res.json())
+    .then(data => {
+      console.log(data);
+      console.log(Array.isArray(data));
+      setTasks(data);
+    })
+    .catch(err => console.log(err));
   }, []);
 
   // Handle input change
