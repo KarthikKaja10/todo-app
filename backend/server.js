@@ -12,7 +12,7 @@ app.use((req, res, next) => {
   next();
 });
 
-mongoose.connect("mongodb+srv://testuser:test123@cluster0.ana53sr.mongodb.net/todo?retryWrites=true&w=majority")
+mongoose.connect("mongodb+srv://testuser:YhhXYSN#4if#L3@cluster0.ana53sr.mongodb.net/?appName=Cluster0")
   .then(() => console.log("DB Connected"))
   .catch(err => console.log(err));
 
